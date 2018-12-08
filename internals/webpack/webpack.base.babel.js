@@ -18,7 +18,7 @@ module.exports = options => ({
     {
       // Compile into js/build.js
       path: path.resolve(process.cwd(), 'docs'),
-      publicPath: '/',
+      publicPath: 'https://pruthvip.github.io/travel-site/docs/',
     },
     options.output,
   ), // Merge with env dependent settings
