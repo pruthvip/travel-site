@@ -18,8 +18,8 @@ module.exports = require('./webpack.base.babel')({
 
   // Utilize long-term caching by adding content hashes (not compilation hashes) to compiled assets
   output: {
-    filename: '[name].[chunkhash].js',
-    chunkFilename: '[name].[chunkhash].chunk.js',
+    filename: '[name].js',
+    chunkFilename: '[name].js',
   },
 
   optimization: {
@@ -76,7 +76,7 @@ module.exports = require('./webpack.base.babel')({
       template: 'app/index.html',
       minify: {
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: false,
         removeRedundantAttributes: true,
         useShortDoctype: true,
         removeEmptyAttributes: true,
